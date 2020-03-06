@@ -27,6 +27,7 @@ var Styler = exports.Styler = function () {
       dot.style['background'] = dot.color;
       dot.style['width'] = this.panel.radius;
       dot.style['height'] = this.panel.radius;
+      dot.style['line-height'] = this.panel.radius;
     }
   }]);
 
