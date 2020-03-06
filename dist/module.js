@@ -70,9 +70,9 @@ var PanelCtrl = exports.PanelCtrl = function (_MetricsPanelCtrl) {
   _createClass(PanelCtrl, [{
     key: 'onInitEditMode',
     value: function onInitEditMode() {
-      this.addEditorTab('Options', 'public/plugins/Grafana-Ping-Grid/editor.html');
-      this.addEditorTab('Series values', 'public/plugins/Grafana-Ping-Grid/values.html');
-      this.addEditorTab('Links', 'public/plugins/Grafana-Ping-Grid/links.html');
+      this.addEditorTab('Options', 'public/plugins/propeller-status-matrix/editor.html');
+      this.addEditorTab('Series values', 'public/plugins/propeller-status-matrix/values.html');
+      this.addEditorTab('Links', 'public/plugins/propeller-status-matrix/links.html');
       this.unitFormats = _kbn2.default.getUnitFormats();
     }
   }, {
