@@ -1,8 +1,6 @@
 {
   "type": "panel",
   "name": "Ping Status Grid",
-  "id": "propeller-status-matrix",
-
   "info": {
     "version": "1.0.0",
     "description": "Status Matrix showing status across hosts",
