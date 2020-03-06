@@ -1,10 +1,10 @@
-# Grafana Status Dot
+# Grafana ping grid
 
-A status dot panel for [Grafana](http://grafana.org/).
+A status matrix for [Grafana](http://grafana.org/).
 
-![Status Dot Panel](https://raw.githubusercontent.com/BT-OpenSource/bt-grafana-status-dot/master/src/img/status_dot.png)
+![Status Dot Panel](src/img/status_grid.png)
 
-This panel shows a colored dot for each series. This is is useful if you want to monitor their status (i.e. latest value). Options for this panel include variable radius, precision and units (for the tooltip) and color thresholds for the value.
+This panel shows a colored square for each host. This is is useful if you want to monitor their online status. Options for this panel include variable width, precision and units (for the tooltip) and color thresholds for the value.
 
 ## Values
 
@@ -24,7 +24,7 @@ The variables are set by splitting the series name on each . character and findi
 
 ## Compatibility
 
-This panel should work with the following data sources: [Graphite](https://grafana.net/plugins/graphite)
+This panel should work with the following data sources: [Prometheus][1]
 
 ## Development
 
@@ -53,4 +53,6 @@ Use `grunt test` to run the Jasmine tests for the plugin; and `grunt eslint` to 
 
 ## Contributing
 
-For bugs and new features, open an issue and we'll take a look. If you want to contribute to the plugin, you're welcome to submit a pull request - just make sure `grunt` runs without errors first.
+For bugs open an issue and we'll take a look. If you want to contribute to the plugin, you're welcome to submit a pull request - just make sure `grunt` runs without errors first.
+
+[1]: https://prometheus.io

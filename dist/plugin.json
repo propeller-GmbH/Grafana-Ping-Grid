@@ -1,28 +1,34 @@
 {
   "type": "panel",
-  "name": "Status Dot",
-  "id": "btplc-status-dot-panel",
+  "name": "Ping Status Grid",
+  "id": "propeller-status-matrix",
 
   "info": {
-    "version": "0.2.4",
-    "description": "Dot panel showing status across series",
+    "version": "1.0.0",
+    "description": "Status Matrix showing status across hosts",
     "author": {
       "name": "BT Plc",
       "url": "https://bt.com"
     },
-    "keywords": ["status", "dot", "panel"],
+	"contributors" : [
+		{
+			"name"  : "Michael Ochmann",
+			"email" : "michael.ochmann@propeller.de"
+		}
+	],
+    "keywords": ["status", "grid", "panel", "matrix"],
     "links": [
       {"name": "MIT Licence", "url": "https://github.com/BT-OpenSource/bt-grafana-status-dot/blob/master/LICENSE"},
-      {"name": "Project Site", "url": "https://github.com/BT-OpenSource/bt-grafana-status-dot"}
+      {"name": "Project Site", "url": "https://github.com/propeller-GmbH/Grafana-Ping-Grid"}
     ],
     "screenshots": [
-      {"name": "Status Dot", "path": "img/status_dot.png"},
+      {"name": "Status Grid", "path": "img/status_grid.png"},
       {"name": "Status Dot Options", "path": "img/status_dot_options.png"},
       {"name": "Status Dot Values", "path": "img/status_dot_values.png"}
     ],
     "logos": {
-      "small": "img/logo.jpg",
-      "large": "img/logo.jpg"
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
     }
   },
 

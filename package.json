@@ -1,7 +1,10 @@
 {
   "description": "n/a",
-  "author": "n/a",
-  "repository": "n/a",
+  "author": {
+    "name": "Michael Ochmann",
+    "email": "michael.ochmann@propeller.de"
+  },
+  "repository": "https://github.com/raintank/worldping-app.git",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",

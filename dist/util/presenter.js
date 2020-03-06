@@ -34,11 +34,21 @@ var Presenter = exports.Presenter = function () {
       dots.forEach(function (dot) {
         return dot.tooltip = _this._tooltip(dot);
       });
+      dots.forEach(function (dot) {
+        return dot.label = _this.label(dot);
+      });
     }
   }, {
     key: '_tooltip',
     value: function _tooltip(dot) {
       return dot.name + '<br>' + this._format(dot.displayValue);
+    }
+  }, {
+    key: 'label',
+    value: function label(dot) {
+      var label = dot.name.split('.');
+      label = label.length < 2 ? dot.name : label.shift();
+      return label;
     }
   }, {
     key: '_color',

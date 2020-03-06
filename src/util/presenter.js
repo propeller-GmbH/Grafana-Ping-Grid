@@ -9,11 +9,18 @@ export class Presenter {
   call (dots) {
     dots.forEach(dot => (dot.color = this._color(dot.colorValue)))
     dots.forEach(dot => (dot.tooltip = this._tooltip(dot)))
+    dots.forEach(dot => (dot.label = this.label(dot)))
   }
 
   _tooltip (dot) {
     return dot.name + '<br>' + this._format(dot.displayValue)
   }
+
+	label(dot) {
+		let label = dot.name.split('.');
+		label = label.length < 2 ? dot.name : label.shift();
+		return label;
+	}
 
   _color (value) {
     var ts = _.sortBy(this.panel.thresholds, t => this._value(t))
