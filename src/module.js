@@ -35,9 +35,9 @@ export class PanelCtrl extends MetricsPanelCtrl {
   }
 
   onInitEditMode () {
-    this.addEditorTab('Options', 'public/plugins/btplc-status-dot-panel/editor.html')
-    this.addEditorTab('Series values', 'public/plugins/btplc-status-dot-panel/values.html')
-    this.addEditorTab('Links', 'public/plugins/btplc-status-dot-panel/links.html')
+    this.addEditorTab('Options', 'public/plugins/Grafana-Ping-Grid/editor.html')
+    this.addEditorTab('Series values', 'public/plugins/Grafana-Ping-Grid/values.html')
+    this.addEditorTab('Links', 'public/plugins/Grafana-Ping-Grid/links.html')
     this.unitFormats = kbn.getUnitFormats()
   }
 
